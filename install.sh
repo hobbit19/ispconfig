@@ -9,7 +9,7 @@ service apparmor stop
 
 update-rc.d -f apparmor remove
 
-apt-get remove apparmor apparmor-utils
+apt-get remove apparmor apparmor-utils -y
 
 # 5. Synchronize the System Clock
 apt-get -y install ntp ntpdate
